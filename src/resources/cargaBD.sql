@@ -1,0 +1,25 @@
+
+--LO TENGO ESCRITO EN ESTE FORMATO DE "COLUMNAS" PARA AYUDARME A VISUALIZARLO, NO ES NECESARIO TANTOS ESPACIOS
+
+INSERT INTO COCHE (N_BASTIDOR, MATRICULA, MARCA, MODELO, COLOR)
+VALUES
+    (1, '2879GHT', 'VOLKSWAGEN', 'POLO'  , 'AZUL OSCURO'),
+    (2, '1125ABC', 'SEAT'      , 'IBIZA' , 'ROJO'       ),
+    (3, '3742HLT', 'RENAULT'   , 'MEGANE', 'BLANCO'     ),
+    (4, '9821GYV', 'VOLVO'     , 'C40'   , 'AMARILLO'   ),
+    (5, '7435BBT', 'MAZDA'     , '6'     , 'GRIS'       );
+
+INSERT INTO CONDUCTOR (NSS, NOMBRE, APELLIDOS)
+VALUES
+    (1234, 'Francesco', 'Bernoulli'           ),
+    (5678, 'Vicente'  , 'Espallardo del Nardo'),
+    (9012, 'Luciano'  , 'Pavarotti'           );
+
+INSERT INTO TRAYECTO (NSS, N_BASTIDOR, KMS, FECHA, GASTOREPOSTAJE)
+VALUES
+    (1234, 1, 234, '1995-01-29', 33.56 ),
+    (9012, 2, 180, '2020-03-12', 201.87),
+    (1234, 3, 180, '1987-11-03', 98.67 ),
+    (5678, 2, 576, '2005-03-02', 122.96);
+
+

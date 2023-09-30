@@ -1,0 +1,1652 @@
+2021-10-02 23:44:58 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:75)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2021-10-02 23:45:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCTO" no encontrada
+Table "PRODUCTO" not found; SQL statement:
+SELECT id,nombre,precio FROM producto [42102-200]
+2021-10-02 23:48:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PRODUCTO" no encontrada
+Table "PRODUCTO" not found; SQL statement:
+SELECT id,nombre,precio FROM producto [42102-200]
+2021-10-03 18:48:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "Cazarecompensas"
+Data conversion error converting "Cazarecompensas" [22018-200]
+2021-10-03 18:49:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "descripcion" no encontrada
+Column "descripcion" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3195)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getDouble(JdbcResultSet.java:752)
+	at ejemplo.Aplicacion.main(Aplicacion.java:107)
+2021-10-05 09:47:32 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:81)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2021-10-05 10:02:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE NAVE SET DESCRIPCION = 'CUCU' WHERE IDNAVE 1[*]"
+Syntax error in SQL statement "UPDATE NAVE SET DESCRIPCION = 'CUCU' WHERE IDNAVE 1[*]"; SQL statement:
+UPDATE NAVE SET DESCRIPCION = 'CUCU' WHERE IDNAVE 1 [42000-200]
+2021-10-05 10:04:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "descripcion" no encontrada
+Column "descripcion" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3195)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at ejemplo.Aplicacion.consultarPersonaje(Aplicacion.java:220)
+	at ejemplo.Aplicacion.main(Aplicacion.java:117)
+2021-10-05 10:05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "descripcion" no encontrada
+Column "descripcion" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3195)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:316)
+	at ejemplo.Aplicacion.consultarPersonaje(Aplicacion.java:220)
+	at ejemplo.Aplicacion.main(Aplicacion.java:117)
+2021-10-05 10:06:26 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:81)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2021-10-05 10:07:04 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 21 more
+2021-10-19 19:12:39 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Dropbox/miParticularPROG/Tema10/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2022-03-22 12:38:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Este metodo no esta permitido para una sentencia preparada; en su lugar use una sentencia regular.
+This method is not allowed for a prepared statement; use a regular statement instead. [90130-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:322)
+	at ejemplo.Aplicacion.borrarPersonaje(Aplicacion.java:327)
+	at ejemplo.Aplicacion.main(Aplicacion.java:145)
+2022-08-17 11:51:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; se esperaba "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+); [42001-200]
+2022-08-17 11:52:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; se esperaba "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA           DATETIME,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+); [42001-200]
+2022-08-17 11:54:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; se esperaba "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA[*]           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             DOUBLE NOT NULL
+    FECHA           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+); [42001-200]
+2022-08-17 11:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             INT NOT NULL
+    FECHA[*]           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; se esperaba "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"
+Syntax error in SQL statement "
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             INT NOT NULL
+    FECHA[*]           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+);"; expected "AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+
+
+
+CREATE TABLE TRAYECTO  (
+    NSS             INT NOT NULL,
+    N_BASTIDOR      INT NOT NULL,
+    KMS             INT NOT NULL
+    FECHA           DATETIME NOT NULL,
+    GASTOREPOSTAJE  DOUBLE NOT NULL, 
+  PRIMARY KEY(NSS, N_BASTIDOR,FECHA), 
+  FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+  FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE 
+); [42001-200]
+2022-08-22 16:21:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+
+
+INSERT INTO CONDUCTOR VALUES
+(1234, 'Francesco', 'Bernouilli'),
+(5678, 'Vicente', 'Espallardo del Nardo'),
+(9012, 'Luciano' , 'Pavarotti'); [21002-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.command.dml.Insert.prepare(Insert.java:319)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:46)
+	at org.h2.command.CommandList.update(CommandList.java:67)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at ejemplo.Aplicacion.insertarDatosTablas(Aplicacion.java:215)
+	at ejemplo.Aplicacion.main(Aplicacion.java:110)
+2022-08-24 10:46:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONAJE" no encontrada
+Table "PERSONAJE" not found; SQL statement:
+SELECT codigo, nombre, descripcion FROM personaje [42102-200]
+2022-08-24 11:00:32 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/profesorado/Desktop/UT10_ProyectoBaseH2/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2022-08-24 17:41:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "NAVE" no encontrada
+Table "NAVE" not found; SQL statement:
+UPDATE NAVE SET MATRICULA = '2990PPP' WHERE N_BASTIDOR = ? [42102-200]
+2022-08-24 17:43:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "NAVE" no encontrada
+Table "NAVE" not found; SQL statement:
+UPDATE NAVE SET MATRICULA = '2990PPP' WHERE N_BASTIDOR = ? [42102-200]
+2022-08-24 17:44:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "NAVE" no encontrada
+Table "NAVE" not found; SQL statement:
+UPDATE NAVE SET MATRICULA = '2990PPP' WHERE N_BASTIDOR = ? [42102-200]
+2022-08-24 17:44:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "2" para el parametro "parameterIndex"
+Invalid value "2" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at ejemplo.Aplicacion.modificarMatricula(Aplicacion.java:289)
+	at ejemplo.Aplicacion.main(Aplicacion.java:144)
+2022-08-25 17:40:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "UPDATE COCHE SET MATRICULA = 2990PPP[*] WHERE N_BASTIDOR = ?"
+Syntax error in SQL statement "UPDATE COCHE SET MATRICULA = 2990PPP[*] WHERE N_BASTIDOR = ?"; SQL statement:
+UPDATE COCHE SET MATRICULA = 2990PPP WHERE N_BASTIDOR = ? [42000-200]
+2022-08-25 17:45:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "MATRICULA VARCHAR(7)": "'aaaaaaaaaaaaa' (13)"
+Value too long for column "MATRICULA VARCHAR(7)": "'aaaaaaaaaaaaa' (13)"; SQL statement:
+UPDATE COCHE SET MATRICULA = 'aaaaaaaaaaaaa' WHERE N_BASTIDOR = ? [22001-200]
+2022-08-25 20:46:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CODUCTOR" no encontrada
+Table "CODUCTOR" not found; SQL statement:
+DELETE FROM CODUCTOR WHERE NSS = ? [42102-200]
+2022-08-26 16:38:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "MATRICULA" no encontrada
+Column "MATRICULA" not found; SQL statement:
+SELECT N_BASTIDOR, MATRICULA, SUM(GASTOREPOSTAJE)  FROM TRAYECTO [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:163)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:145)
+	at org.h2.command.dml.Select.prepare(Select.java:1206)
+	at org.h2.command.Parser.prepareCommand(Parser.java:744)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at ejemplo.Aplicacion.consultarSumaGasto(Aplicacion.java:382)
+	at ejemplo.Aplicacion.main(Aplicacion.java:146)
+2022-08-26 16:39:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: La columna "N_BASTIDOR" debe estar incluida en la lista de GROUP BY
+Column "N_BASTIDOR" must be in the GROUP BY list; SQL statement:
+SELECT N_BASTIDOR, SUM(GASTOREPOSTAJE)  FROM TRAYECTO [90016-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:182)
+	at org.h2.command.dml.Select.updateAgg(Select.java:545)
+	at org.h2.command.dml.Select.gatherGroup(Select.java:525)
+	at org.h2.command.dml.Select.queryGroup(Select.java:487)
+	at org.h2.command.dml.Select.queryWithoutCache(Select.java:839)
+	at org.h2.command.dml.Query.queryWithoutCacheLazyCheck(Query.java:201)
+	at org.h2.command.dml.Query.query(Query.java:489)
+	at org.h2.command.dml.Query.query(Query.java:451)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:222)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at ejemplo.Aplicacion.consultarSumaGasto(Aplicacion.java:382)
+	at ejemplo.Aplicacion.main(Aplicacion.java:146)
+2022-08-26 16:43:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "GASTO" no encontrada
+Column "GASTO" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3195)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getDouble(JdbcResultSet.java:752)
+	at ejemplo.Aplicacion.consultarSumaGasto(Aplicacion.java:389)
+	at ejemplo.Aplicacion.main(Aplicacion.java:146)
+2022-08-26 16:44:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "TOTAL" no encontrada
+Column "TOTAL" not found [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3195)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3268)
+	at org.h2.jdbc.JdbcResultSet.getDouble(JdbcResultSet.java:752)
+	at ejemplo.Aplicacion.consultarSumaGasto(Aplicacion.java:389)
+	at ejemplo.Aplicacion.main(Aplicacion.java:146)
+2023-05-08 20:30:36 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-08 20:31:20 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-08 20:32:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHE" no encontrada
+Table "COCHE" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    FECHA DATE NOT NULL PRIMARY KEY,
+    KMS INTEGER NOT NULL,
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    NSS INTEGER NOT NULL,
+    FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE
+); [42102-200]
+2023-05-09 19:00:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHE" no encontrada
+Table "COCHE" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    FECHA DATE NOT NULL PRIMARY KEY,
+    KMS INTEGER NOT NULL,
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    NSS INTEGER NOT NULL,
+    FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE
+); [42102-200]
+2023-05-09 19:01:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "COCHE" no encontrada
+Table "COCHE" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    FECHA DATE NOT NULL PRIMARY KEY,
+    KMS INTEGER NOT NULL,
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    NSS INTEGER NOT NULL,
+    FOREIGN KEY(N_BASTIDOR) REFERENCES PUBLIC.COCHE(N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY(NSS) REFERENCES PUBLIC.CONDUCTOR(NSS) ON UPDATE CASCADE ON DELETE CASCADE
+); [42102-200]
+2023-05-09 19:09:04 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:09:34 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:10:35 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:11:01 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:11:07 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:22:43 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:22:51 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:23:04 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:25:39 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:31:26 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:31:39 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:50:25 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 19:50:31 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:85)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-09 20:11:53 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM COCHE CONDUCTOR TRAYECTO[*]"
+Syntax error in SQL statement "SELECT * FROM COCHE CONDUCTOR TRAYECTO[*]"; SQL statement:
+SELECT * FROM COCHE CONDUCTOR TRAYECTO [42000-200]
+2023-05-09 20:12:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "N_BASTIDOR[*]"
+Syntax error in SQL statement "N_BASTIDOR[*]"; SQL statement:
+N_BASTIDOR [42000-200]
+2023-05-11 12:57:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "1111GHT"
+Data conversion error converting "1111GHT"; SQL statement:
+UPDATE COCHE SET MATRICULA =? WHERE N_BASTIDOR =? [22018-200]
+2023-05-11 13:29:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo 
+Data conversion error converting ; SQL statement:
+UPDATE COCHE SET MATRICULA =? WHERE N_BASTIDOR =? [22018-200]
+2023-05-11 13:35:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "1111GHT"
+Data conversion error converting "1111GHT"; SQL statement:
+UPDATE COCHE SET MATRICULA =? WHERE N_BASTIDOR =? [22018-200]
+2023-05-11 13:37:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "1111AAA"
+Data conversion error converting "1111AAA"; SQL statement:
+UPDATE COCHE SET MATRICULA =? WHERE N_BASTIDOR =? [22018-200]
+2023-05-11 19:28:13 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:86)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-12 12:28:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CONDUCTORES" no encontrada
+Table "CONDUCTORES" not found; SQL statement:
+DELETE FROM CONDUCTORES WHERE NSS =? [42102-200]
+2023-05-12 12:55:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO CONDUCTOR (NSS, NOMBRE, APELLIDOS[*]"; se esperaba ",, )"
+Syntax error in SQL statement "INSERT INTO CONDUCTOR (NSS, NOMBRE, APELLIDOS[*]"; expected ",, )"; SQL statement:
+INSERT INTO CONDUCTOR (nss, nombre, apellidos [42001-200]
+2023-05-15 11:53:01 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:86)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/UT10_ProyectoBaseH2/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-15 13:51:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+ [42001-200]
+2023-05-15 13:54:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+ [42001-200]
+2023-05-15 14:00:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+ [42001-200]
+2023-05-15 14:01:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+)[*];
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS COCHE (
+    N_BASTIDOR INTEGER NOT NULL PRIMARY KEY,
+    MATRICULA VARCHAR(7) NOT NULL,
+    MARCA VARCHAR(15) NOT NULL,
+    MODELO VARCHAR(15) NOT NULL,
+    COLOR VARCHAR(15) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS CONDUCTOR (
+    NSS INTEGER NOT NULL PRIMARY KEY,
+    NOMBRE VARCHAR(30) NOT NULL,
+    APELLIDOS VARCHAR(45) NOT NULL,
+);
+
+CREATE TABLE IF NOT EXISTS TRAYECTO (
+    NSS INTEGER NOT NULL,
+    N_BASTIDOR INTEGER NOT NULL,
+    KMS INTEGER NOT NULL,
+    FECHA DATE NOT NULL PRIMARY KEY,    
+    GASTOREPOSTAJE DOUBLE NOT NULL,
+    FOREIGN KEY (NSS) REFERENCES CONDUCTOR (NSS) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (N_BASTIDOR) REFERENCES COCHE (N_BASTIDOR) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+ [42001-200]
+2023-05-15 14:33:38 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "GASTOREPOSTAJE[*]"; se esperaba "GRANT"
+Syntax error in SQL statement "GASTOREPOSTAJE[*]"; expected "GRANT"; SQL statement:
+GASTOREPOSTAJE [42001-200]
+2023-05-15 14:33:49 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "NSS[*]"
+Syntax error in SQL statement "NSS[*]"; SQL statement:
+NSS [42000-200]
+2023-05-15 14:41:08 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CONDUCTOR[*]"; se esperaba "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"
+Syntax error in SQL statement "CONDUCTOR[*]"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+CONDUCTOR [42001-200]
+2023-05-15 14:41:19 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "COLOR[*]"; se esperaba "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"
+Syntax error in SQL statement "COLOR[*]"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+COLOR [42001-200]
+2023-05-15 14:41:56 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "COCHE[*] CONDUCTOR TRAYECTO"; se esperaba "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"
+Syntax error in SQL statement "COCHE[*] CONDUCTOR TRAYECTO"; expected "COMMIT, CREATE, CALL, CHECKPOINT, COMMENT"; SQL statement:
+COCHE CONDUCTOR TRAYECTO [42001-200]
+2023-05-23 18:06:23 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/Cabello_Santacruz_Jose_Antonio_PROG10_Tarea/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/Cabello_Santacruz_Jose_Antonio_PROG10_Tarea/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:93)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2877)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:481)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:402)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3579)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:170)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:103)
+	at org.h2.engine.Database.getPageStore(Database.java:2659)
+	at org.h2.engine.Database.open(Database.java:675)
+	at org.h2.engine.Database.openDatabase(Database.java:307)
+	at org.h2.engine.Database.<init>(Database.java:301)
+	at org.h2.engine.Engine.openSession(Engine.java:74)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at ejemplo.Aplicacion.main(Aplicacion.java:89)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/Cabello_Santacruz_Jose_Antonio_PROG10_Tarea/proyectobase.h2db.mv.db [1.4.200/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/Cabello_Santacruz_Jose_Antonio_PROG10_Tarea/proyectobase.h2db.mv.db [1.4.200/7]" [50000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/Rip_c/Desktop/DAW/4 Programación/Tarea/10 - Tarea/Cabello_Santacruz_Jose_Antonio_PROG10_Tarea/proyectobase.h2db.mv.db [1.4.200/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:950)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:381)
+	... 19 more
+2023-05-23 18:08:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "TABLA" no encontrada
+Table "TABLA" not found; SQL statement:
+SELECT COUNT(*) FROM tabla [42102-200]
